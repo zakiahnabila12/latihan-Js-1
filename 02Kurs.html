@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs </title>
+</head>
+<body>
+    <input type="number" class="input">
+    <select class="kurs">
+    <option value="USD">USD - 14.650</option>
+    </select>
+    <button class="hitung">Hitung</button>
+    <p class="hasil">Hasil :</p>
+
+    <script>
+        //tahapan 1 menyeleksi semua elemen yang dibutuhkan
+
+        const input = document.querySelector(".input");
+        const kursSelect = document.querySelector(".kurs");
+        const hitungBtn = document.querySelector(".hitung");
+        const hasil = document.querySelector(".hasil");
+        
+        hitungBtn.addEventListener("click", function() {
+            
+       
+        
+        //ketika diklik:
+        //ambil inputan user
+        //ambill pilihan user
+        
+        // jika pilihan user == $
+            if (kursSelect.value == "USD") {
+
+            hasil.innerHTML = "Hasil:" + input.value * 14650;
+            }
+        
+        })
+
+
+        
+
+    </script>
+</body>
+</html>
